@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kopanong - Contact Us</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body style="margin:0; font-family:Poppins, Arial; background:#fdf8f0;">
+
+<header style="background:#4a0f0f; padding:10px 25px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:10;">
+    <img src="Images/Logo Kopanong Res" alt="Logo" style="width:50px; height:50px; border-radius:50%; border:2px solid #ffcc00;">
+    <nav style="color:white; font-size:14px; font-weight:600;">
+        <a href="home.html" style="color:white; text-decoration:none;">Home</a> |
+        <a href="about.html" style="color:white; text-decoration:none;">About Us</a> |
+        <a href="services.html" style="color:white; text-decoration:none;">Services</a> |
+        <a href="gallery.html" style="color:white; text-decoration:none;">Gallery</a> |
+        <a href="contact.html" style="color:#ffcc00; font-weight:bold; text-decoration:none; border-bottom:2px solid #ffcc00;">Contact Us</a>
+    </nav>
+</header>
+<div style="height:5px; background: repeating-linear-gradient(90deg, #ffcc00 0 20px, #000 20px 40px, #8B0000 40px 60px);"></div>
+
+<div style="text-align:center; padding:30px 20px 10px;">
+    <h1 style="color:#4a0f0f; margin:5px; font-size:2.5rem;">Contact Us</h1>
+    <p style="color:#666;">We'd love to hear from you!</p>
+</div>
+
+<main style="max-width:1100px; margin:20px auto; padding:0 20px;">
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap:18px; margin-bottom:25px;">
+        <div style="background:white; border-radius:15px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.1); border-top:5px solid #8B0000; text-align:center;">
+            <div style="font-size:35px;">📍</div>
+            <h3 style="color:#4a0f0f; margin:10px 0 5px;">Visit Us</h3>
+            <p style="font-size:13px; color:#555; line-height:1.6;">89 High Street, Suite, Brixton<br>Johannesburg, 2092<br><b>Phone:</b> 072 241 6218</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=Kopanong+Kotas+Restaurant+89+High+St+Brixton+Johannesburg" target="_blank" style="display:inline-block; margin-top:10px; background:#4a0f0f; color:white; padding:10px 18px; border-radius:20px; font-size:12px; text-decoration:none; font-weight:bold;">📍 Open in Google Maps</a>
+        </div>
+
+        <div style="background:white; border-radius:15px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.1); border-top:5px solid #ffcc00; text-align:center;">
+            <div style="font-size:35px;">🕒</div>
+            <h3 style="color:#4a0f0f; margin:10px 0 5px;">Opening Hours</h3>
+            <p style="font-size:13px; color:#555; line-height:1.8;"><b>Mon - Sat:</b> 09:00 - 20:00<br><b>Sun:</b> 09:00 - 20:00<br><span style="background:#e8ffe8; color:green; padding:3px 10px; border-radius:10px; font-size:11px;">● Open Now</span></p>
+        </div>
+
+        <div style="background:#4a0f0f; border-radius:15px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.15); text-align:center; color:white;">
+            <div style="font-size:35px;">🛵</div>
+            <h3 style="color:#ffcc00; margin:10px 0 5px;">Available On Uber Eats</h3>
+            <p style="font-size:13px; color:#ddd;">Kopanong Kotas Restaurant - 3.7 ⭐</p>
+            <!-- THIS LINK NOW GOES DIRECT TO RESTAURANT - FIXED -->
+            <a href="https://www.ubereats.com/za/search?q=Kopanong%20Kotas%20Restaurant" target="_blank" style="display:inline-block; margin-top:12px; background:#06c167; color:white; padding:10px 20px; border-radius:20px; font-size:13px; text-decoration:none; font-weight:bold;">Order on Uber Eats →</a>
+            <div style="margin-top:12px;">
+                <a href="https://wa.me/27722416218" target="_blank" style="display:inline-block; background:#25D366; color:white; padding:10px 20px; border-radius:20px; font-size:13px; text-decoration:none; font-weight:bold;">💬 WhatsApp Us</a>
+            </div>
+        </div>
+    </div>
+
+    <div style="display:grid; grid-template-columns: 1.2fr 0.8fr; gap:20px;">
+        <div style="background:white; border-radius:15px; padding:25px; box-shadow:0 6px 18px rgba(0,0,0,0.1);">
+            <h3 style="color:#8B0000; border-left:5px solid #ffcc00; padding-left:10px; margin-top:0;">Send Us a Message</h3>
+            <form onsubmit="event.preventDefault(); alert('Thanks! Message sent!');">
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+                    <input type="text" placeholder="Your Name" required style="padding:12px; border:1.5px solid #ddd; border-radius:10px;">
+                    <input type="tel" placeholder="Phone Number" required style="padding:12px; border:1.5px solid #ddd; border-radius:10px;">
+                </div>
+                <textarea placeholder="Write your order here..." rows="5" required style="width:100%; margin-top:12px; padding:12px; border:1.5px solid #ddd; border-radius:10px; box-sizing:border-box;"></textarea>
+                <button type="submit" style="width:100%; margin-top:15px; background:#8B0000; color:white; border:none; padding:14px; border-radius:30px; font-weight:bold; cursor:pointer;">Send Message 🚀</button>
+            </form>
+        </div>
+        <div style="background:white; border-radius:15px; overflow:hidden; box-shadow:0 6px 18px rgba(0,0,0,0.1);">
+            <div style="background:#4a0f0f; color:white; padding:12px 18px; font-weight:bold;">📍 LOCATION</div>
+            <iframe src="https://www.google.com/maps?q=Kopanong+Kotas+Restaurant+Brixton&z=16&output=embed" width="100%" height="380" style="border:0;" loading="lazy"></iframe>
+        </div>
+    </div>
+</main>
+<footer style="text-align:center; padding:14px; background:#222; color:white; margin-top:30px; font-size:13px;">&copy; 2026 Kopanong | ST10525115</footer>
+</body>
+</html>
