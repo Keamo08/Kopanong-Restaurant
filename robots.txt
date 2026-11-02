@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kopanongrestaurant2-a3c4e9b8g9h0.azurewebsites.net/sitemap.xml

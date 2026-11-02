@@ -1,61 +1,81 @@
-/* Kopanong Restaurant - ST10525115 - WEDE5020 POE Part 2 - 100% Rubric */
-
-/* === DEFAULT STYLES [5 Marks] === */
-* { margin:0; padding:0; box-sizing:border-box; }
-body { font-family:'Poppins', Arial, sans-serif; background:#fdf8f0; color:#333; line-height:1.6; }
-img { max-width:100%; display:block; width:100%; height:auto; object-fit:cover; }
-
-/* === TYPOGRAPHY [5 Marks] + Typography Adjustments [5 Marks] === */
-h1 { font-size:clamp(1.7rem, 4vw, 2.5rem); font-weight:700; color:#4a0f0f; line-height:1.2; }
-h2 { font-size:clamp(1.3rem, 3vw, 1.8rem); font-weight:600; color:#8B0000; border-left:5px solid #ffcc00; padding-left:10px; }
-h3 { font-size:clamp(1.1rem, 2.5vw, 1.3rem); font-weight:600; color:#4a0f0f; }
-p { font-size:clamp(12px, 2vw, 14px); font-weight:400; line-height:1.8; color:#555; }
-nav a { font-size:14px; font-weight:600; text-transform:uppercase; letter-spacing:0.5px; color:white; text-decoration:none; }
-
-/* === LAYOUT [5 Marks] === */
-header { background:#4a0f0f; padding:10px 25px; display:flex; justify-content:space-between; align-items:center; position:sticky; top:0; z-index:10; }
-.kasi-stripe { height:6px; background:repeating-linear-gradient(90deg,#ffcc00 0 20px,#000 20px 40px,#8B0000 40px 60px); }
-.hero { display:flex; justify-content:space-between; align-items:center; gap:30px; padding:40px 5%; background:#fdf5e6; flex-wrap:wrap; }
-main { max-width:1100px; margin:20px auto; padding:0 20px; }
-.grid-3 { display:grid; grid-template-columns:repeat(auto-fit, minmax(280px,1fr)); gap:18px; }
-.card { background:white; border-radius:15px; padding:20px; box-shadow:0 6px 18px rgba(0,0,0,0.1); }
-footer { text-align:center; padding:14px; background:#222; color:white; margin-top:30px; font-size:13px; }
-
-/* === DECORATION & COLOUR [5 Marks] === */
-.logo { width:50px; height:50px; border-radius:50%; border:2px solid #ffcc00; }
-.active { color:#ffcc00 !important; border-bottom:2px solid #ffcc00; font-weight:bold; }
-.badge { background:#8B0000; color:#ffcc00; padding:6px 12px; border-radius:20px; font-weight:bold; font-size:11px; display:inline-block; }
-.btn { display:inline-block; padding:10px 18px; border-radius:20px; text-decoration:none; font-weight:bold; font-size:12px; }
-.btn-dark { background:#4a0f0f; color:white; }
-.btn-uber { background:#06c167; color:white; }
-.btn-whatsapp { background:#25D366; color:white; }
-
-/* === PSEUDO-CLASSES [5 Marks] === */
-nav a:hover { color:#ffcc00; transform:scale(1.05); transition:0.3s; }
-.btn:hover { transform:scale(1.05); transition:0.3s; }
-.btn-dark:hover { background:#ffcc00; color:#000; }
-.card:hover { transform:translateY(-5px); box-shadow:0 12px 25px rgba(0,0,0,0.2); transition:0.3s; }
-input:focus, textarea:focus { border:2px solid #8B0000; outline:none; background:#fff8e6; }
-button:active, .btn:active { transform:scale(0.97); }
-
-/* === IMAGE ADJUSTMENTS [5 Marks] === */
-.hero-img { width:100%; max-height:350px; border-radius:15px; border:4px solid #ffcc00; }
-.gallery-img { height:200px; border-radius:15px 15px 0 0; }
-
-/* === MEDIA QUERIES [10 Marks] - 3 Breakpoints = Comprehensive === */
-@media screen and (max-width:1024px){
-  .hero { padding:30px 3%; }
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap');
+*{box-sizing:border-box;margin:0;padding:0;font-family:Poppins,Arial
 }
-@media screen and (max-width:768px){
-  /* Navigation Adjustments [5 Marks] */
-  header { flex-direction:column; gap:10px; }
-  nav { display:flex; flex-wrap:wrap; justify-content:center; gap:10px; }
-  .hero { flex-direction:column; text-align:center; }
-  .grid-3 { grid-template-columns:1fr 1fr; }
+body{background:#fdf8f0;color:#222;line-height:1.6
 }
-@media screen and (max-width:480px){
-  .grid-3 { grid-template-columns:1fr; }
-  nav a { font-size:12px; }
-  .hero-img, .gallery-img { height:180px; }
-  main { padding:0 15px; }
+.navbar{background:#4a0f0f;padding:12px 25px;display:flex;justify-content:space-between;align-items:center;position:sticky;top:0;z-index:100}
+.logo{color:#ffcc00;font-weight:800;font-size:18px;text-decoration:none}
+.nav-links{display:flex;gap:12px
+}
+.nav-link{color:white;text-decoration:none;font-weight:600;font-size:14px}
+.nav-link.active{color:#ffcc00;border-bottom:2px solid #ffcc00}
+.kasi-stripe{height:5px;background:repeating-linear-gradient(90deg,#4a0f0f 0 20px,#ffcc00 20px 40px, #2e7d32 40px 60px)}
+#datetime{text-align:center;background:#ffcc00;color:#4a0f0f;padding:6px;font-weight:600;font-size:13px}
+.hero{text-align:center;padding:40px 20px;background:transparent;margin:15px}
+.hero-button{display:inline-block;background:#4a0f0f;color:white;padding:12px 20px;border-radius:8px;text-decoration:none;font-weight:700;margin:5px}
+.hero-images{display:flex;gap:15px;justify-content:center;margin:20px 0;flex-wrap:wrap}
+.hero-images img{width:260px;height:180px;object-fit:cover;border-radius:12px;border:3px solid #4a0f0f}
+.contact-section{max-width:800px;margin:20px auto;background:#fffdf5;padding:25px;border-radius:15px;border:1px solid #ffcc00}
+.form-container{max-width:600px;margin:auto}
+.form-group{margin-bottom:14px}
+.form-group label{font-weight:600;display:block;margin-bottom:4px;font-size:14px}
+.form-group input,.form-group select,.form-group textarea{width:100%;padding:10px;border:1px solid #ccc;border-radius:8px}
+.btn{display:inline-block;padding:10px 16px;border-radius:8px;border:none;cursor:pointer;font-weight:600}
+.btn-dark{background:#4a0f0f;color:white}
+.btn-yellow{background:#ffcc00;color:#4a0f0f}
+#formStatus{margin-top:12px;font-weight:600;color:#2e7d32}
+.slideshow-section{background:#fffdf5;border-radius:15px;padding:20px;margin:20px auto;max-width:800px;border:1px solid #ffe082}
+.slideshow{position:relative;max-width:700px;margin:auto}
+.slideshow img{width:100%;height:380px;object-fit:cover;border-radius:12px;border:3px solid #4a0f0f}
+.slide-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(74,15,15,0.8);color:white;border:none;padding:10px 14px;border-radius:50%;cursor:pointer;font-size:18px}
+.slide-btn.prev{left:10px}
+.slide-btn.next{right:10px}
+.slide-caption{margin-top:8px;font-weight:600;color:#4a0f0f;text-align:center}
+.slide-controls{margin-top:10px;display:flex;justify-content:center;gap:15px;align-items:center}
+.gallery-section{background:transparent;border-radius:15px;padding:20px;margin:20px}
+.gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px}
+.gallery img{width:100%;height:180px;object-fit:cover;border-radius:10px;border:2px solid #4a0f0f;cursor:pointer;transition:0.2s}
+.gallery img:hover{transform:scale(1.03)}
+.lightbox{display:none;position:fixed;inset:0;background:rgba(0,0,0,0.9);justify-content:center;align-items:center;z-index:200}
+.lightbox.open{display:flex}
+.lightbox img{max-width:90%;max-height:90%;border-radius:12px;border:3px solid #ffcc00}
+.info-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:15px;margin:20px;padding:0 20px}
+.info-card{background:#fffdf5;padding:15px;border-radius:12px;text-align:center;border:1px solid #ffe082}
+footer{text-align:center;padding:20px;background:#4a0f0f;color:white;margin-top:30px;font-size:13px}
+@media(max-width:768px){.hero-images img{width:100%}.navbar{flex-direction:column}}
+
+.form-group label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: bold;
+  color: #4a0f0f;
+  font-size: 14px;
+}
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 15px;
+  transition: border-color 0.3s;
+  box-sizing: border-box;
+}
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: #4a0f0f;
+  outline: none;
+  background: #fffdf5;
+}
+.error-text {
+  font-size: 12px;
+  color: #d32f2f;
+  margin-top: 4px;
+  display: block;
+  min-height: 16px;
+  font-weight: bold;
 }
