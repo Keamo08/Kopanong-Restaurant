@@ -1,6 +1,6 @@
-// Kopanong Restaurant - ST10525115 - Final JS
 
-// 1. DATETIME - yellow bar updates every second
+
+// 1. DATETIME - yellow bar 
 function updateDateTime() {
   const dt = document.getElementById('datetime');
   if (dt) {
@@ -13,7 +13,7 @@ function updateDateTime() {
 setInterval(updateDateTime, 1000);
 updateDateTime();
 
-// 2. ACCORDION - About page "Click here for history"
+// 2. ACCORDION - About page 
 document.addEventListener('DOMContentLoaded', () => {
   const headers = document.querySelectorAll('.accordion-header');
   headers.forEach(header => {
@@ -33,11 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // 3. SLIDESHOW - Gallery page
   const slides = [
-    { src: "Images/Combo.jpeg", caption: "Combo - R65 - Best Seller" },
-    { src: "Images/DeliciousCombo.jpeg", caption: "Delicious Combo - R70 - Loaded" },
-    { src: "Images/Kota1.jpeg", caption: "Kota1 - R40 - Classic Kasi" },
-    { src: "Images/Plate.jpg", caption: "Plate - R55 - Full Meal" },
-    { src: "Images/Sides.jpeg", caption: "Sides - R15 - Chips & Salad" }
+    { src: "images/Picture 4.jpeg", caption: "Kota - Burger Patty and Egg Kota- Best Seller" },
+    { src: "images/DeliciousCombo.jpeg", caption: "Combo - Chips and Russian/Vienna" },
+    { src: "images/Kota1.jpeg", caption: "Kota - Russian and Vienna Kota" },
+    { src: "images/Plate.jpg", caption: "Plate - Chicken Feet and Gizards with Pap and Sides" },
+    { src: "Iimages/Sides.jpeg", caption: "Sides - Magwinya, Snoek Fish, Polony and Atchaar" }
   ];
   
   const slideImage = document.getElementById('slideImage');
@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
     startSlideshow();
   }
 
-  // 4. LIGHTBOX - Gallery bottom images
+  // 4. LIGHTBOX 
   const lightbox = document.getElementById('lightbox');
   const lightboxImg = document.getElementById('lightbox-img');
   const galleryImages = document.querySelectorAll('.gallery img');

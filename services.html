@@ -29,47 +29,47 @@
 <h1>Our Kota Menu - Best Kota Johannesburg</h1>
 <p>87 High Street Brixton | 09:00-21:00 | 072 241 6218 | Family owned since 2004</p>
 
-<!-- SEARCH FILTER - DYNAMIC CONTENT RUBRIC 5 MARKS -->
+
 <div style="margin:20px 0; text-align:center;">
-  <input type="text" id="menuSearch" placeholder="🔍 Search kota... e.g. Classic, R40, Full House, Combo" 
+  <input type="text" id="menuSearch" placeholder="🔍 Search kota... e.g. Classic, R75, Russian and Vienna, Combo" 
   style="width:90%; max-width:500px; padding:12px 15px; border:2px solid #4a0f0f; border-radius:25px; font-size:16px; outline:none;"
   onkeyup="filterMenu()">
   <p id="searchResults" style="margin-top:8px; font-size:13px; color:#666;"></p>
 </div>
 
 <div class="info-grid" style="margin-top:20px" id="menuGrid">
-<div class="info-card menu-item" data-name="Classic Kota R40">
-<img src="Images/Kota1.jpeg" alt="Classic Kota R40" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
-<h3>Classic Kota - R40</h3><p>Quarter bread, chips, polony, cheese, atchar - Student favorite</p>
+<div class="info-card menu-item" data-name="Classic Kota R75">
+<img src="images/Kota1.jpeg" alt="Classic Kota R75" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
+<h3>Classic Kota - R75</h3><p>Burger Patty, Egg, Vienna and Russian - Student favorite</p>
 <a href="contact.html" class="btn btn-dark">Order Now</a>
 </div>
 
-<div class="info-card menu-item" data-name="Full House R65">
-<img src="Images/Plate.jpg" alt="Full House Kota R65" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
-<h3>Full House - R65</h3><p>Everything + egg, burger patty, Russian, extra cheese - 400+ reviews</p>
+<div class="info-card menu-item" data-name="Combo">
+<img src="images/DeliciousCombo.jpeg" alt="Combo R45" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
+<h3>Combo R45</h3><p>Chips and Russian/Vienna - 400+ reviews</p>
 <a href="contact.html" class="btn btn-dark">Order Now</a>
 </div>
 
-<div class="info-card menu-item" data-name="Combo Kota R65">
-<img src="Images/Combo.jpeg" alt="Combo Kota R65" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
-<h3>Combo Kota - R65</h3><p>Best seller! Loaded kota with all toppings + side salad</p>
+<div class="info-card menu-item" data-name="Russian and Vienna Kota R55">
+<img src="images/Picture 5.jpeg" alt="Russian and Vienna Kota R55" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
+<h3>Russian and Vienna Kota R55</h3><p>Best seller! Loaded kota with both Russian and Vienna inside</p>
 <a href="contact.html" class="btn btn-dark">Order Now</a>
 </div>
 
-<div class="info-card menu-item" data-name="Delicious Combo R70">
-<img src="Images/DeliciousCombo.jpeg" alt="Delicious Combo R70" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
-<h3>Delicious Combo - R70</h3><p>Premium loaded kota - double everything, for big hunger</p>
+<div class="info-card menu-item" data-name="Chicken Feet and Gizards with Pap - R45">
+<img src="images/Plate.jpg" alt="Chicken Feet and Gizards with Pap - R45" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
+<h3>Chicken Feet and Gizards with Pap - R45</h3><p>Chicken Feet and Gizards with Pap together with Salsa and Salad</p>
 <a href="contact.html" class="btn btn-dark">Order Now</a>
 </div>
 
-<div class="info-card menu-item" data-name="Sides R15">
-<img src="Images/Sides.jpeg" alt="Sides R15" style="width:100%;height:150px;object-fit:cover;border-radius:8px">
-<h3>Sides - R15</h3><p>Chips, salad, atchar, extra cheese - Add to any kota</p>
+<div class="info-card menu-item" data-name="Sides ">
+<img src="images/Sides.jpeg" alt="Sides " style="width:100%;height:150px;object-fit:cover;border-radius:8px">
+<h3>Sides </h3><p> Snoek Fish, Polony, Atchaar etc - Add to any kota</p>
 <a href="contact.html" class="btn btn-dark">Order Now</a>
 </div>
 
-<div class="info-card menu-item" data-name="Catering R35" style="background:#4a0f0f;color:white">
-<h3>Catering - From R35pp</h3><p>From R35 per person for parties, events, funerals. Call 072 241 6218. 87 High Street Brixton catering.</p>
+<div class="info-card menu-item" data-name="Catering " style="background:#4a0f0f;color:white">
+<h3>Catering </h3><p>For parties, events, Call 072 241 6218. 87 High Street Brixton catering.</p>
 <a href="contact.html" class="btn btn-yellow">Book Catering</a>
 </div>
 </div>
@@ -78,7 +78,7 @@
 <footer>&copy; <span id="year"></span> ST10525115 Kopanong Restaurant 87 High Street Brixton | <a href="sitemap.xml" style="color:#ffcc00">Sitemap</a></footer>
 
 <script>
-// Search Filter Function - Dynamic Content Requirement
+
 function filterMenu() {
   const input = document.getElementById('menuSearch').value.toLowerCase();
   const items = document.querySelectorAll('.menu-item');
