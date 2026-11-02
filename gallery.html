@@ -1,75 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopanong - Contact Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/stylesheet.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - Kopanong Restaurant Kota Photos Brixton Johannesburg</title>
+<meta name="description" content="Gallery of Kopanong Restaurant best kota Johannesburg - Classic, Full House, Combo kota photos, Brixton High Street restaurant images">
+<meta name="keywords" content="kota photos, Kopanong gallery, kota images Brixton, best kota pictures Johannesburg, kota Johannesburg gallery">
+<meta name="author" content="ST10525115 Kopanong Restaurant">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="CSS/stylesheet.css">
+<script src="JavaScript/main.js" defer></script>
 </head>
 <body>
+<nav class="navbar"><a href="home.html" class="logo">Kopanong Restaurant</a>
+<div class="nav-links">
+<a href="home.html">Home</a>
+<a href="about.html">About</a>
+<a href="services.html">Services</a>
+<a href="gallery.html" class="active">Gallery</a>
+<a href="contact.html">Contact</a>
+</div></nav>
+<div id="datetime"></div>
 
-<header>
-    <img src="Images/Logo Kopanong Res" alt="Logo" class="logo">
-    <nav>
-        <a href="home.html">Home</a> |
-        <a href="about.html">About Us</a> |
-        <a href="services.html">Services</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html" class="active">Contact Us</a>
-    </nav>
-</header>
+<section class="slideshow-section">
+<h2>Featured Slideshow - Kopanong Kotas</h2>
+<div class="slideshow">
+<img id="slideImage" src="Images/Combo.jpeg" alt="Combo" class="clickable-image">
+<button class="slide-btn prev" id="prevBtn">&#10094;</button>
+<button class="slide-btn next" id="nextBtn">&#10095;</button>
+<div class="slide-caption" id="slideCaption">Combo - R65 - Best Seller</div>
+</div>
+<div class="slide-controls">
+<button id="playBtn">Pause slideshow</button>
+<span id="slideCounter">1 / 5</span>
+</div>
+</section>
 
-<div class="kasi-stripe"></div>
+<section class="gallery-section">
+<h2>Our Gallery</h2>
+<p>Click any image to view it in the lightbox.</p>
+<div class="gallery">
+<img src="Images/Combo.jpeg" alt="Combo">
+<img src="Images/DeliciousCombo.jpeg" alt="Chips and Russian/Vienna">
+<img src="Images/Kota1.jpeg" alt="Kota">
+<img src="Images/Plate.jpg" alt="Plate">
+<img src="Images/Sides.jpeg" alt="Sides">
+</div>
+</section>
 
-<main>
-    <div style="text-align:center; margin-bottom:20px;">
-        <h1>Contact Kopanong</h1>
-        <p>87 High Street, Brixton, Johannesburg | Open Daily 09:00 - 21:00</p>
-    </div>
-
-    <div class="grid-3">
-        <div class="card">
-            <h3>📍 Find Us</h3>
-            <p><b>Address:</b><br>87 High Street<br>Brixton, Johannesburg<br>South Africa</p>
-            <p><b>Hours:</b><br>Mon-Sun: 09:00 - 21:00<br>Kitchen closes 20:30</p>
-            <iframe src="https://www.google.com/maps?q=87+High+Street+Brixton+Johannesburg&output=embed" class="map-frame" loading="lazy"></iframe>
-        </div>
-
-        <div class="card">
-            <h3>📞 Talk to Us</h3>
-            <p><b>Phone / WhatsApp:</b><br>072 241 6218</p>
-            <div style="display:flex; flex-direction:column; gap:10px; margin-top:15px;">
-                <a href="https://wa.me/27722416218" target="_blank" class="btn btn-whatsapp">💬 WhatsApp Us</a>
-                <a href="tel:+27722416218" class="btn btn-dark">📞 Call Now</a>
-                <a href="https://www.ubereats.com/za/search?q=Kopanong%20Kotas%20Restaurant" target="_blank" class="btn btn-uber">🛵 Order on Uber Eats</a>
-            </div>
-            <div class="card" style="background:#fff8e1; margin-top:15px; text-align:center;">
-                <p style="font-size:12px; color:#666;">Family business since 2004</p>
-                <p style="font-weight:bold; color:#8B0000;">ST10525115</p>
-            </div>
-        </div>
-
-        <div class="card">
-            <h3>✉️ Quick Message</h3>
-            <form action="#" method="post">
-                <label for="name">Your Name</label>
-                <input type="text" id="name" name="name" placeholder="e.g. Sthe" required>
-                
-                <label for="email">Email / Phone</label>
-                <input type="text" id="email" name="email" placeholder="e.g. 072..." required>
-                
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="4" placeholder="I want 2x Cheese Kota..." required></textarea>
-                
-                <button type="submit" class="btn btn-dark" style="width:100%; margin-top:10px;">Send Message</button>
-                <p style="font-size:11px; color:#888; text-align:center; margin-top:8px;">Demo form - for assignment purpose only</p>
-            </form>
-        </div>
-    </div>
-</main>
-
-<footer>&copy; | ST10525115 | ❤️</footer>
-
+<div id="lightbox" class="lightbox"><img id="lightbox-img" src="" alt=""></div>
+<footer>&copy; <span id="year"></span> ST10525115 Kopanong Restaurant</footer>
 </body>
 </html>
