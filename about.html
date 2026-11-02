@@ -1,69 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kopanong - About Us</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/stylesheet.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Kopanong Restaurant Family Owned Since 2004 Brixton</title>
+<meta name="description" content="About Kopanong Restaurant - Family owned kota shop since 2004 in Brixton Johannesburg. 400+ reviews, halal friendly, 87 High Street, story of best kota">
+<meta name="keywords" content="Kopanong Restaurant history, kota Brixton story, family owned restaurant Johannesburg, best kota since 2004, ST10525115">
+<meta name="author" content="ST10525115 Kopanong Restaurant">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="CSS/stylesheet.css">
+<script src="JavaScript/main.js" defer></script>
 </head>
 <body>
-
-<header>
-    <img src="Images/Logo Kopanong Res" alt="Kopanong Logo" class="logo">
-    <nav>
-        <a href="home.html">Home</a> |
-        <a href="about.html" class="active">About Us</a> |
-        <a href="services.html">Services</a> |
-        <a href="gallery.html">Gallery</a> |
-        <a href="contact.html">Contact Us</a>
-    </nav>
-</header>
-
+<nav class="navbar">
+<a href="home.html" class="logo">Kopanong Restaurant</a>
+<div class="nav-links">
+<a href="home.html" class="nav-link">Home</a>
+<a href="about.html" class="nav-link active">About Us</a>
+<a href="services.html" class="nav-link">Services</a>
+<a href="gallery.html" class="nav-link">Gallery</a>
+<a href="contact.html" class="nav-link">Contact</a>
+</div>
+</nav>
 <div class="kasi-stripe"></div>
+<div id="datetime"></div>
 
-<main>
-    <div style="text-align:center; margin-bottom:20px;">
-        <h1>Our Story - Kopanong</h1>
-        <p>More than food - we are family | The Gathering Place</p>
-    </div>
+<section class="contact-section">
+<h1>About Kopanong Restaurant - Family Owned Since 2004</h1>
+<p>Located at <strong>87 High Street, Brixton Johannesburg 2092</strong>, Kopanong is not just a restaurant - it's a kasi institution. Family owned since 2004, Halal friendly, with over 400 happy customers.</p>
+<img src="Images/Combo.jpeg" alt="Kopanong family since 2004" style="width:100%;height:250px;object-fit:cover;border-radius:12px;margin:15px 0;border:3px solid #4a0f0f">
+<h2>Why We're Best Kota in Brixton?</h2>
+<ul>
+<li>✅ Fresh ingredients daily - 09:00 to 21:00</li>
+<li>✅ Classic Kota R40 - Last Number R75</li>
+<li>✅ Student discounts</li>
+<li>✅ Catering  - 072 241 6218</li>
+<li>✅ 400+ reviews - Most loved in Brixton</li>
+</ul>
+<h3>Our Story Accordion </h3>
+<div class="accordion">
+<div class="accordion-header" style="background:#4a0f0f;color:white;padding:10px;border-radius:8px;cursor:pointer;margin-top:10px">Click to see our history since 2004</div>
+<div class="accordion-content" style="display:none;padding:10px"><div class="open" style="display:block">Started in 2004 by family, we grew from small kota stand to best kota shop in Johannesburg. We serve Classic, Full House, Combo, Delicious Combo and sides.</div></div>
+</div>
+</section>
 
-    <div class="card" style="display:flex; gap:20px; flex-wrap:wrap; align-items:center;">
-        <div style="flex:1; min-width:250px;">
-            <h2>From Fruits to Famous Kotas</h2>
-            <p><b>2004:</b> Established by our father as a fruits and vegetables business.</p>
-            <p><b>2006:</b> Handed to his wife, who expanded to fresh produce + cooked plates.</p>
-            <p><b>2010:</b> Passed to daughter, current owner. Introduced kotas - now our signature.</p>
-            <p>Today Kopanong Restaurant is known for affordable, filling meals and strong community love in Brixton, Johannesburg.</p>
-            <div class="grid-3" style="margin-top:15px;">
-                <div class="card"><h3>2004</h3><p>Started</p></div>
-                <div class="card"><h3>20+ Years</h3><p>Serving</p></div>
-                <div class="card"><h3>400+</h3><p>Reviews</p></div>
-            </div>
-        </div>
-        <div style="flex:1; min-width:250px;">
-            <img src="Images/Logo Kopanong Res" alt="Kopanong Family" class="hero-img">
-        </div>
-    </div>
-
-    <div class="grid-3" style="margin-top:18px;">
-        <div class="card" style="background:#4a0f0f; color:white;">
-            <h3 style="color:#ffcc00;">Mission</h3>
-            <p style="color:#ddd;">To provide delicious, affordable, high-quality kota meals while creating a welcoming space that feels like home.</p>
-        </div>
-        <div class="card">
-            <h3>Vision</h3>
-            <p>To be the most loved kota and comfort food restaurant in Johannesburg, known for great taste, great service, and supporting our community.</p>
-        </div>
-        <div class="card">
-            <h3>Why Kopanong?</h3>
-            <p>Family-owned, student prices from R25, fast 15-min service, and authentic kasi flavour - Half Bread, Full Heart!</p>
-            <a href="services.html" class="btn btn-dark" style="margin-top:10px;">View Menu</a>
-        </div>
-    </div>
-</main>
-
-<footer>&copy; 2026 Kopanong | ST10525115 | Made with Kasi Love ❤️</footer>
-
+<footer>&copy; <span id="year"></span> ST10525115 Kopanong Restaurant 87 High Street Brixton | <a href="sitemap.xml" style="color:#ffcc00">Sitemap</a></footer>
 </body>
 </html>
